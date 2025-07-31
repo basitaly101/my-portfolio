@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loco.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="minicircle"></div>
+    <div id="main">
+              <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">Abdul Basit</div>
+
+        <ul class="nav-links desktop-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">☰</div>
+      </nav>
+
+      <!-- Sidebar for mobile/tablet -->
+      <div class="sidebar" id="sidebar">
+        <span class="close-btn" onclick="closeSidebar()">&times;</span>
+        <div class="profile">
+          <img src="./ASSETS/20250731_2043_image.png" alt="Profile Picture" />
+          <h2>Basit Aly</h2>
+          <p>Web Developer | Learner</p>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home" onclick="closeSidebar()">Home</a></li>
+          <li><a href="#about" onclick="closeSidebar()">About</a></li>
+          <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
+          <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
+        </ul>
+      </div>
+        <div id="hero">
+           
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="boundingelem">Product</h1>
+                </div>
+                <div class="blocktext">
+                    <div class="bounding">
+                        <h1 class="boundingelem" id="secondh1">Designer</h1>
+                    </div>
+                    <div class="bounding">
+                        <h5 class="boundingelem">Based in toronto</h5>
+                    </div>
+                </div>
+            </div>
+            <div id="chhotiheadings">
+                <div class="bounding">
+                    <h5 class="boundingelem">available for freelance</h5>
+                </div>
+                <div class="bounding">
+                    <h5 class="boundingelem">work from may 23'</h5>
+                </div>
+            </div>
+            <div id="herofooter">
+                <a href="#">previously worked at yml <i class="ri-arrow-right-up-line"></i></a>
+                <a href="#">protopie ambassador <i class="ri-arrow-right-up-line"></i></a>
+                <div id="iconset">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="elem">
+                <img src="./plug.png" alt="">
+                <h1>The Plug</h1>
+                <h5>2022</h5>
+            </div>
+            <div class="elem">
+                <img src="./ixperience.png" alt="">
+                <h1>ixperience</h1>
+                <h5>2022</h5>
+            </div>
+            <div class="elem elemlast">
+                <img src="./hudu.png" alt="">
+                <h1>hudu</h1>
+                <h5>2022</h5>
+            </div>
+        </div>
+        <div id="about">
+            <img src="./ASSETS/20250731_2043_image.png" alt="">
+            <div id="textabout">
+                <h5>(ABout me)</h5>
+                <p>I’m a focused and forward-thinking Front-End Developer skilled in HTML5, CSS3, and JavaScript. Currently enrolled in the Web & App Development program at Saylani Mass IT Training, I specialize in building responsive, high-performance user interfaces with clean, scalable code. I enjoy transforming creative ideas into sleek, functional web experiences with attention to detail and smooth user flow. I'm also expanding my skills in Git, UI/UX design, and performance optimization to deliver polished, production-ready solutions. My goal is to become a Full Stack Developer with strong backend and AI knowledge. I’m always learning, always building, and ready to take on meaningful challenges that push my limits. I’m actively looking for freelance, internship, or remote opportunities where I can grow, collaborate with talented teams, and deliver real-world impact. Let’s connect, innovate, and build something great together that makes a real difference.</p>
+                <a href="">Let's talk</a>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h5>(forgot to mention)</h5>
+            <h3>subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i></h3>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <h5>2023 &copy;</h5>
+                <h5>0:05 AM EST</h5>
+            </div>
+            <div id="footerright">
+                <a href="#">dribbble</a><a href="#">instagram</a><a href="#">linkedin</a><a href="#">twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
