@@ -1,0 +1,60 @@
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  color: #f1f1f1;
+}
+
+#header {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+#card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 0 transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.05), 0 6px 12px rgba(0, 255, 128, 0.1);
+}
+
+.card i {
+  font-size: 34px;
+  color: #6cff72;
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 22px;
+  color: #c5c5c5;
+  font-weight: 600;
+}
+
+.card span {
+  display: block;
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}

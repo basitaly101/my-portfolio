@@ -1,0 +1,142 @@
+#about {
+    width: 50vw;
+    height: 70vh;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 300px auto;
+  background-color: #0b0b0b;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      #111 0px,
+      #111 3px,
+      #1a1a1a 3px,
+      #1a1a1a 6px
+    ),
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.02) 0%,
+      transparent 80%
+    );
+  background-blend-mode: overlay;
+  background-size: 8px 8px;
+
+  border: 1px solid #222;
+  border-radius: 32px;
+  padding: 3rem 3rem 3rem 3.5rem;
+  max-width: 940px;
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.95),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  font-family: 'Poppins', sans-serif;
+  color: #dddddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#about:hover {
+  transform: translateY(-6px);
+  background-color: #1a1a1a; /* carbon gray tint */
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      #2c2c2c 0px,
+      #2c2c2c 3px,
+      #3a3a3a 3px,
+      #3a3a3a 6px
+    ),
+    radial-gradient(
+      circle at 30% 30%,
+      rgba(255, 255, 255, 0.04) 0%,
+      transparent 80%
+    );
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, 1),
+    inset 0 2px 0 rgba(255, 255, 255, 0.04);
+}
+
+/* ✅ Kawasaki Lime Green Chassis Stripe */
+#about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00ff00, #007700);
+  border-radius: 5px 0 0 5px;
+}
+#about h5 {
+  color: #ffffff;
+  font-size: 2.3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+}
+#about p {
+  color: #bbbbbb;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+#about .small-btn {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+    margin-top: 1.5rem;
+    padding: 12px 22px;
+    border: 3px solid #000000;
+    box-shadow: 0 0 0 5px #00ff009f;
+    border-radius: 100px;
+    color: #ffffff;
+    background: radial-gradient(circle at 30% 60%, #000000, #1e4718);
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease
+}
+#about .small-btn:hover {
+   
+    border: 3px solid #006800;
+    border-radius: 100px;
+    color: #ffffff;
+    background: radial-gradient(circle at 30% 60%, #000000, #22fc06 , #006800);
+    
+}
+#textabout {
+    width: 30rem;
+}
+
+#textabout h5 {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+#textabout p {
+    line-height: 1.7;
+}
+#about img {
+    width: 300px;
+  border: 2px solid #1a1a1a;
+  box-shadow: 0 0 0 3px #00ff00;
+  border-radius: 250px;
+  transition: 0.3s ease;
+}
+#about img:hover {
+  transform: scale(1.03);
+}
+#textabout a {
+    padding: 12px 22px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}

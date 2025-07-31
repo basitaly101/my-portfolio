@@ -1,126 +1,300 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABDUL BASIT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="loco.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="nav.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="loco.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="minicircle"></div>
     <div id="main">
-              <!-- Navbar -->
-      <nav class="navbar">
-        <div class="logo">Abdul Basit</div>
+    <!-- LOCOMOTIVE SCROLL WRAPPER -->
+    <div class="scroll-container" data-scroll-container>
+        <!-- NAVBAR -->
+        <nav class="navbar" data-scroll data-scroll-sticky data-scroll-target=".scroll-container">
+            <div class="logo">Abdul Basit</div>
+            <ul class="nav-links desktop-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+        </nav>
 
-        <ul class="nav-links desktop-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="hamburger" id="hamburger">☰</div>
-      </nav>
-
-      <!-- Sidebar for mobile/tablet -->
-      <div class="sidebar" id="sidebar">
-        <span class="close-btn" onclick="closeSidebar()">&times;</span>
-        <div class="profile">
-          <img src="./ASSETS/20250731_2043_image.png" alt="Profile Picture" />
-          <h2>Basit Aly</h2>
-          <p>Web Developer | Learner</p>
+        <!-- SIDEBAR (MOBILE) -->
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" id="close-btn" aria-label="Close menu">&times;</button>
+            <div class="profile">
+                <img src="./ASSETS/20250731_2043_image.png" alt="Abdul Basit Profile Picture" />
+                <h2>Basit Aly</h2>
+                <p>Web Developer | Learner</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-          <li><a href="#home" onclick="closeSidebar()">Home</a></li>
-          <li><a href="#about" onclick="closeSidebar()">About</a></li>
-          <li><a href="#projects" onclick="closeSidebar()">Projects</a></li>
-          <li><a href="#contact" onclick="closeSidebar()">Contact</a></li>
-        </ul>
-      </div>
-        <div id="hero">
-           
-            <div id="heading">
-                <div class="bounding">
-                    <h1 class="boundingelem">Product</h1>
-                </div>
-                <div class="blocktext">
-                    <div class="bounding">
-                        <h1 class="boundingelem" id="secondh1">Designer</h1>
-                    </div>
-                    <div class="bounding">
-                        <h5 class="boundingelem">Based in toronto</h5>
-                    </div>
-                </div>
+
+
+
+
+      <!-- Sections -->
+            <section id="home" data-scroll>
+      <section id="hero">
+        <div id="heading">
+          <div class="bounding">
+            <h1 class="boundingelem">FRONTEND</h1>
+          </div>
+          <div class="blocktext">
+            <div class="bounding">
+              <h1 class="boundingelem" id="secondh1">CRAFTSMAN</h1>
             </div>
-            <div id="chhotiheadings">
-                <div class="bounding">
-                    <h5 class="boundingelem">available for freelance</h5>
-                </div>
-                <div class="bounding">
-                    <h5 class="boundingelem">work from may 23'</h5>
-                </div>
+            <div class="bounding">
+              <h5 class="boundingelem">Based in Karachi</h5>
             </div>
-            <div id="herofooter">
-                <a href="#">previously worked at yml <i class="ri-arrow-right-up-line"></i></a>
-                <a href="#">protopie ambassador <i class="ri-arrow-right-up-line"></i></a>
-                <div id="iconset">
-                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
-                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div id="chhotiheadings">
+          <div class="bounding">
+            <h5 class="boundingelem">available for freelance</h5>
+          </div>
+          <div class="bounding">
+            <h5 class="boundingelem">work from may 23'</h5>
+          </div>
+        </div>
+        <div id="herofooter">
+          <a href="#">freshers <i class="ri-arrow-right-up-line"></i></a>
+          <a href="#">study at smit<i class="ri-arrow-right-up-line"></i></a>
+          <div id="iconset">
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+            <div class="circle"><i class="ri-arrow-down-line"></i></div>
+          </div>
+        </div>
+      </section>
+            </section>
+            <!-- project -->
+            <section id="projects" data-scroll>
         <div id="second">
-            <div class="elem">
-                <img src="./plug.png" alt="">
-                <h1>The Plug</h1>
-                <h5>2022</h5>
-            </div>
-            <div class="elem">
-                <img src="./ixperience.png" alt="">
-                <h1>ixperience</h1>
-                <h5>2022</h5>
-            </div>
-            <div class="elem elemlast">
-                <img src="./hudu.png" alt="">
-                <h1>hudu</h1>
-                <h5>2022</h5>
-            </div>
+          <div class="elem">
+            <img src="./assets/the calculator.jpg" alt="" />
+            <h1>the calculator</h1>
+            <h5>2025</h5>
+          </div>
+          <div class="elem">
+            <img src="./assets/netflix clone.jpg" alt="" />
+            <h1>netflix clone</h1>
+            <h5>2025</h5>
+          </div>
+          <div class="elem elemlast">
+            <img src="./assets/login page.jpg" alt="" />
+            <h1>login page</h1>
+            <h5>2025</h5>
+          </div>
         </div>
-        <div id="about">
-            <img src="./ASSETS/20250731_2043_image.png" alt="">
-            <div id="textabout">
-                <h5>(ABout me)</h5>
-                <p>I’m a focused and forward-thinking Front-End Developer skilled in HTML5, CSS3, and JavaScript. Currently enrolled in the Web & App Development program at Saylani Mass IT Training, I specialize in building responsive, high-performance user interfaces with clean, scalable code. I enjoy transforming creative ideas into sleek, functional web experiences with attention to detail and smooth user flow. I'm also expanding my skills in Git, UI/UX design, and performance optimization to deliver polished, production-ready solutions. My goal is to become a Full Stack Developer with strong backend and AI knowledge. I’m always learning, always building, and ready to take on meaningful challenges that push my limits. I’m actively looking for freelance, internship, or remote opportunities where I can grow, collaborate with talented teams, and deliver real-world impact. Let’s connect, innovate, and build something great together that makes a real difference.</p>
-                <a href="">Let's talk</a>
-            </div>
+      </section>
+     <section id="about" data-scroll>
+        <img src="./ASSETS/20250731_2043_image.png" alt="mine" />
+        <div id="textabout">
+          <h5>(ABout me)</h5>
+          <p>
+            I’m a frontend developer who blends creativity with precision to
+            build clean, responsive, and high-performance web interfaces. With a
+            solid foundation in HTML5, CSS3, and JavaScript, I focus on writing
+            scalable, maintainable code that not only looks great but works
+            flawlessly across devices. I have a strong eye for design, a deep
+            respect for user experience, and a mindset rooted in problem-solving
+            and continuous learning. Currently leveling up with React.js,
+            Tailwind CSS, and animation tools like GSAP and Anime.js, I bring
+            both technical depth and design thinking to every project. Reliable,
+            fast, and always improving — I build with intention and deliver with
+            confidence.
+          </p>
+          <a href="" class="small-btn">Let's talk</a>
         </div>
-        <div id="subscribe">
-            <h5>(forgot to mention)</h5>
-            <h3>subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i></h3>
+     </section>
+      
+            <div id="container" data-scroll>
+        <div id="header">My Portfolio</div>
+        <div id="card-wrapper">
+          <div class="card">
+            <i class="fas fa-user"></i>
+            <p>Name</p>
+            <span>Basit Aly</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-calendar"></i>
+            <p>Age</p>
+            <span>22</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Location</p>
+            <span>Karachi</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-code"></i>
+            <p>Role</p>
+            <span>Frontend Developer</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <p>Skills</p>
+            <span>HTML, CSS, JS</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-code-branch"></i>
+            <p>Web Frameworks</p>
+            <span>React, Next.js</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-mobile-alt"></i>
+            <p>App Dev</p>
+            <span>Flutter, React Native</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-tools"></i>
+            <p>Tools</p>
+            <span>VS Code, Figma</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-briefcase"></i>
+            <p>Experience</p>
+            <span>Fresher</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-language"></i>
+            <p>Languages</p>
+            <span>English, Urdu</span>
+          </div>
+          <div class="card">
+            <i class="fab fa-github"></i>
+            <p>GitHub</p>
+            <span>github.com/basitaly</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-envelope"></i>
+            <p>Email</p>
+            <span>you@example.com</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-phone"></i>
+            <p>Phone</p>
+            <span>+92 302 3747307</span>
+          </div>
+          <div class="card">
+            <i class="fab fa-linkedin"></i>
+            <p>LinkedIn</p>
+            <span>Basit Aly</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-bullseye"></i>
+            <p>Goals</p>
+            <span>Freelancer & AI Expert</span>
+          </div>
+          <div class="card">
+            <i class="fas fa-gamepad"></i>
+            <p>Hobbies</p>
+            <span>Gaming, Coding</span>
+          </div>
         </div>
-        <div id="footer">
-            <div id="footerleft">
-                <h5>2023 &copy;</h5>
-                <h5>0:05 AM EST</h5>
-            </div>
-            <div id="footerright">
-                <a href="#">dribbble</a><a href="#">instagram</a><a href="#">linkedin</a><a href="#">twitter</a>
-            </div>
+      </div>
+
+      <!-- contact.html -->
+            <section id="contact" data-scroll>
+      
+        <h2>🤝 Work With Me</h2>
+        <p>Have a project? Let’s build something powerful together.</p>
+
+        <div class="chat-card">
+          <label for="client-name">👤 Your Name</label>
+          <input
+            type="text"
+            id="client-name"
+            placeholder="Enter your full name"
+          />
         </div>
+
+        <div class="chat-card">
+          <label for="client-email">📧 Email Address</label>
+          <input type="email" id="client-email" placeholder="you@example.com" />
+        </div>
+
+        <div class="chat-card">
+          <label for="client-service">🛠 Service Needed</label>
+          <input
+            type="text"
+            id="client-service"
+            placeholder="e.g., Portfolio Website"
+          />
+        </div>
+
+        <div class="chat-card">
+          <label for="client-budget">💰 Budget Range</label>
+          <input
+            type="text"
+            id="client-budget"
+            placeholder="e.g., $500 - $2000"
+          />
+        </div>
+
+        <div class="chat-card">
+          <label for="client-message">💬 Project Overview</label>
+          <textarea
+            id="client-message"
+            placeholder="Tell me about your project..."
+          ></textarea>
+        </div>
+
+        <button onclick="sendEmail()">🚀 Let’s Collaborate</button>
+        <div id="form-status"></div>
+      </section>
+
+      <div id="subscribe">
+        <h5>(forgot to mention)</h5>
+        <h3>
+          subscribe to my youtube channel <i class="ri-arrow-right-up-line"></i>
+        </h3>
+      </div>
+
+      <footer id="footer">
+        <div id="footerleft">
+          <h5>2023 &copy;</h5>
+          <h5>0:05 AM EST</h5>
+        </div>
+        <div id="footerright">
+          <a href="#">dribbble</a>
+          <a href="#">instagram</a>
+          <a href="https://www.linkedin.com/in/basit-aly-48533334a/"
+            >linkedin</a
+          >
+          <a href="#">twitter</a>
+        </div>
+      </footer>
+    </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
-    <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script> 
+   </body>
 </html>
