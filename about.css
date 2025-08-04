@@ -1,5 +1,4 @@
-#about {
-    width: 50vw;
+   #about{ width: 50vw;
     height: 70vh;
     border-radius: 50px;
     display: flex;
@@ -139,4 +138,104 @@
     color: #fff;
     font-size: 12px;
     text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+  #about {
+    width: 90vw;
+    height: auto;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 30px;
+  }
+
+  #textabout {
+    width: 26rem;
+  }
+
+  #about img {
+    width: 260px;
+  }
+
+  #textabout p {
+    font-size: 1rem;
+  }
+
+  #about .small-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #about {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 2rem;
+  }
+
+  #textabout {
+    width: 90%;
+    text-align: center;
+  }
+
+  #about img {
+    width: 220px;
+  }
+
+  #about .small-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    gap: 30px;
+    padding: 1.5rem;
+    width: 90vw;
+  }
+
+  #textabout {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about img {
+    width: 200px;
+  }
+
+  #textabout p {
+    font-size: 0.95rem;
+  }
+
+  #about .small-btn {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding: 1.2rem;
+    gap: 20px;
+  }
+
+  #about img {
+    width: 170px;
+  }
+
+  #textabout h5 {
+    font-size: 1.4rem;
+  }
+
+  #textabout p {
+    font-size: 0.9rem;
+  }
+
+  #about .small-btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
 }
